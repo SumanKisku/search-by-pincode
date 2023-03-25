@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 // React toastify
@@ -42,7 +42,7 @@ const Search = () => {
           }
           // records found
           else {
-            sessionStorage.setItem("locations", JSON.stringify(data[0]["PostOffice"]));
+            localStorage.setItem("locations", JSON.stringify(data[0]["PostOffice"]));
             navigate("/searchresults");
           }
         })

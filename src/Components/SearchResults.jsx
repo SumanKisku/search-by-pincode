@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const SearchResults = () => {
-  const [locations, setLocations] = useState(JSON.parse(sessionStorage.getItem("locations")));
+  const [locations, setLocations] = useState(JSON.parse(localStorage.getItem("locations")));
   const [filteredLocations, setFilteredLocations] = useState(locations);
 
 
