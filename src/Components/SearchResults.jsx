@@ -17,6 +17,7 @@ const SearchResults = () => {
   return (
     <div className="m-5">
       <p className="font-black text-xl">Pincode: {locations[0]["Pincode"]}</p>
+      <p className="mb-5"><span className="font-black ">Message:</span> Number of pincode(s) found: {locations.length}</p>
       <form className="flex flex-col">
         <input onChange={handleChange} type="text" name="filter" id="filter" placeholder="Filter" className="border-2 border-gray-800 p-1 px-2 rounded-lg appearance-none ease-in-out duration-300 hover:shadow-md focus:outline-orange-600" />
       </form>
